@@ -10,6 +10,9 @@ import ApiCall from "./hooks/EffectHook/ApiCall";
 import Focus from "./hooks/RefHook/Focus";
 import Wrapper from "./hooks/ContextHook/Wrapper";
 import TaskApp from "./hooks/ReducerHook/TaskApp";
+import TodoContainer from "./hooks/ReactMemo/TodoContainer";
+import Memoization from "./hooks/MemoHook/Memoization";
+import TodosContainer from "./hooks/CallbackHook/TodosContainer";
 
 function App() {
   // const [version, setVersion] = useState(0);
@@ -52,7 +55,19 @@ function App() {
 
       {/* --------------------------------------------- */}
       {/* Reducer Hook */}
-      <TaskApp />
+      {/* <TaskApp /> */}
+
+      {/* --------------------------------------------- */}
+      {/* {React.Memo} */}
+      {/* <TodoContainer /> */}
+
+      {/* --------------------------------------------- */}
+      {/* {Memo Hook} */}
+      {/* <Memoization /> */}
+
+      {/* --------------------------------------------- */}
+      {/* {Callback Hook} */}
+      <TodosContainer />
     </>
   );
 }
